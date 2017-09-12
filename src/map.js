@@ -2,6 +2,18 @@ export var prefix = "$";
 
 function Map() {}
 
+/*
+ var map = d3.map(
+      [{name: "foo"}, {name: "bar"}],
+      function (d) {
+          return d.name;
+      }
+  );
+  构造： Map ==>
+    $bar:{name: "bar"}
+    $foo:{name: "foo"}
+ */
+
 Map.prototype = map.prototype = {
   constructor: Map,
   has: function(key) {
